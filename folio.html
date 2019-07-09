@@ -1,0 +1,92 @@
+<main>
+  <!--[1] Article page: intro text-->
+  <article layout="centered" class="-text-center" skin="dark">
+    <h1 class="-text-heading">Transitions</h1>
+    <p class="-text-larger -text-italic -ph-4">
+      Predefined page & section transitions. <br/> Ready to use out of the box.
+    </p>
+    <a href="#" onclick="FOLIO.next();" class="-button -text-bold">View transitions</a>
+    <a href="#" onclick="FOLIO.goto(16);" class="-button -button-text -color-grey -mt-3">See how it's done</a>
+  </article>
+
+  <!-- [2 to 15] Photo pages with applied transition  -->
+  <img src="photo-01.jpg" transition="left"       alt="next: right" />
+  <img src="photo-02.jpg" transition="right"      alt="next: up" />
+  <img src="photo-01.jpg" transition="up"         alt="next: down" />
+  <img src="photo-02.jpg" transition="down"       alt="next: scale-left" />
+  <img src="photo-01.jpg" transition="scale-left" alt="next: scale-up" />
+  <img src="photo-02.jpg" transition="scale-up"   alt="next: scale-down" />
+  <img src="photo-01.jpg" transition="scale-down" alt="next: fold-left" />
+  <img src="photo-02.jpg" transition="fold-left"  alt="next: fold-right" />
+  <img src="photo-01.jpg" transition="fold-right" alt="next: fold-up" />
+  <img src="photo-02.jpg" transition="fold-up"    alt="next: fold-down" />
+  <img src="photo-01.jpg" transition="fold-down"  alt="next: fade" />
+  <img src="photo-02.jpg" transition="fade"       alt="next: scale" />
+  <img src="photo-01.jpg" transition="scale"      alt="next: none" />
+  <img src="photo-02.jpg" transition="none"       alt="next: Transitions guidlines page" />
+  
+  <!-- [16] Article page: How it's done-->
+  <article transition="fold-left" hash="how-its-done">
+    <h2 class="-mb-3">How it's done?</h2>
+    <p class="-text-medium">Transition guidelines:</p>
+    <ul class="-text-medium">
+      <li>Use transition attribute on page element to define incoming transition type.</li>
+      <li>Types of transitions: <br/>
+        <span class="-text-smaller -color-red">
+          'left' (default), 'right', 'up', 'down', <br/>
+          'scale-left', 'scale-right', 'scale-up', 'scale-down',<br/>
+          'fold-left', 'fold-right', 'fold-up', 'fold-down',<br/>
+          'fade', 'scale', 'none'
+        </span>
+      </li>
+      <li>
+        Example:
+        <pre><code class="-text-smaller">&lt;img src="photo.jpg&quot; <strong>transition=&quot;fold-down&quot;</strong>/&gt;</code></pre>
+      </li>
+    </ul>
+    <p class="-text-medium">Also, use <a href="http://docs.foliodot.com/options">configuration object</a> to:</p>
+    <ul>
+      <li>Define default project page transition type</li>
+      <li>Define default thumbnails page transition type </li>
+      <li>Define transition type between project and thumbnails section</li>
+    </ul>
+  </article> 
+  
+    <article layout="centered" transition="fold-left">
+    <a href="#" onclick="FOLIO.toggle('sidebar');" class="-text-bold">
+      About this project
+    </a>
+    <p class="-color-grey -mt-4">More pens:</p>
+    <a href="https://codepen.io/foliodot/full/dGBjBR/" target="_blank">Narrative demo</a>
+    <a href="https://codepen.io/foliodot/full/MKMZaY/" target="_blank">Photo gallery</a>
+  </article>
+  
+</main>
+
+<!-- 
+  Created with Foliodot starter template: https://foliodot.com 
+  Documentaion: http://docs.foliodot.com/
+  Images: https://unsplash.com/ 
+-->
+
+<aside>
+  <header>
+    <h5>folio.demo</h5></header>
+  <p>
+    <a href="https://foliodot.com" target="_blank">Foliodot</a> is simplest starter template for photogrpahy portfolio websites and narrative photo projects:
+  </p>
+  <ul class="-ml-3">
+    <li>Minimalistic markup</li>
+    <li>Aesthetic simplicity</li>
+    <li>Photobook layouts</li>
+    <li>Versatile options</li>
+  </ul>
+  <p>You may actually enjoy making your website.</p>
+  <p>See <a href="https://foliodot.com" target="_blank">foliodot.com</a></p>
+  <p>—</p>
+  <p>
+    <a href="https://codepen.io/foliodot/" target="_blank">
+      More pens
+    </a>
+  </p>
+</aside>
