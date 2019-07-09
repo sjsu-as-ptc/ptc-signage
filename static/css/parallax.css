@@ -317,3 +317,9 @@ svg {
   -webkit-transform: rotateX(0);
           transform: rotateX(0);
 }
+
+
+/* Custom CSS */
+.slider-pagi {
+ display: none; 
+}
