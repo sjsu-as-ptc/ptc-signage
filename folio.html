@@ -6,8 +6,11 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
   <script>
+    $( document ).ready(function() {
+    FOLIO.next().delay(2000);
+    });
   $(window).bind('hashchange', function() {
-     console.log('Change');
+     FOLIO.next().delay(2000);
 });
   </script>
 </head>
