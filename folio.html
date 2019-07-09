@@ -9,6 +9,11 @@
   function isInView(elem){
     return $(elem).offset().top - $(window).scrollTop() < $(elem).height() ;
   }
+    $(window).scroll(function(){
+     if (isInView($('.morePens')))
+        //fire whatever you what 
+        console.log('Complete');
+    })
   </script>
 </head>
 <body>
@@ -99,7 +104,7 @@
   <p>You may actually enjoy making your website.</p>
   <p>See <a href="https://foliodot.com" target="_blank">foliodot.com</a></p>
   <p>—</p>
-  <p>
+  <p class="morePens">
     <a href="https://codepen.io/foliodot/" target="_blank">
       More pens
     </a>
