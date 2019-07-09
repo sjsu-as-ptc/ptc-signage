@@ -6,12 +6,18 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
   <script>
+    var count = 0;
     $( document ).ready(function() {
     //FOLIO.next().delay(2000);
       setTimeout(FOLIO.next,2000);
+      count++;
     });
   $(window).bind('hashchange', function() {
      setTimeout(FOLIO.next,2000);
+    count++;
+    if(count > 16){
+      window.location.replace("./ptc-signage/folio.html");
+    }
 });
   </script>
 </head>
