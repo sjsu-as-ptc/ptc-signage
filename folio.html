@@ -7,7 +7,8 @@
   crossorigin="anonymous"></script>
   <script>
     $( document ).ready(function() {
-    FOLIO.next().delay(2000);
+    //FOLIO.next().delay(2000);
+      setTimeout(FOLIO.next,2000);
     });
   $(window).bind('hashchange', function() {
      FOLIO.next().delay(2000);
