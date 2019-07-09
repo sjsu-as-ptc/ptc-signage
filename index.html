@@ -1,1 +1,10 @@
 Redirecting...
+<script>
+  Array.prototype.random = function (length) {
+       return this[Math.floor((Math.random()*length))];
+ }
+
+ var urls = ['./parallax.html', './parallax.html', './parallax.html', './parallax.html', './parallax.html', './parallax.html'];
+ var chosen_url = urls.random(urls.length);
+ alert(chosen_url);
+</script>
