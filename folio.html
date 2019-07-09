@@ -6,14 +6,9 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
   <script>
-  function isInView(elem){
-    return $(elem).offset().top - $(window).scrollTop() < $(elem).height() ;
-  }
-    $(window).scroll(function(){
-     if (isInView($('.morePens')))
-        //fire whatever you what 
-        console.log('Complete');
-    })
+  $(window).bind('hashchange', function() {
+     console.log('Change');
+});
   </script>
 </head>
 <body>
