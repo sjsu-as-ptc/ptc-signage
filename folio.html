@@ -61,8 +61,12 @@
     <a href="#" onclick="FOLIO.toggle('sidebar');" class="-text-bold">
       About this project
     </a>
-      <script>console.log('Hello');</script>
-    <p class="-color-grey -mt-4">More pens:</p>
+      <script>
+        if($('#wow').is(':visible')){
+          console.log('WOW');
+        }
+      </script>
+    <p class="-color-grey -mt-4" id="wow">More pens:</p>
     <a href="https://codepen.io/foliodot/full/dGBjBR/" target="_blank">Narrative demo</a>
     <a href="https://codepen.io/foliodot/full/MKMZaY/" target="_blank">Photo gallery</a>
   </article>
