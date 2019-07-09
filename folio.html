@@ -62,9 +62,11 @@
       About this project
     </a>
       <script>
-        if($('#wow').is(':visible')){
-          console.log('WOW');
-        }
+        $(document).ready(function() {
+          if($('#wow').is(':visible')){
+            console.log('WOW');
+          }
+         });
       </script>
     <p class="-color-grey -mt-4" id="wow">More pens:</p>
     <a href="https://codepen.io/foliodot/full/dGBjBR/" target="_blank">Narrative demo</a>
