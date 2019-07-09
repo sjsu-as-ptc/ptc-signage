@@ -1,0 +1,8 @@
+.on-photo-fit-cover:not(.on-page-16):not(.on-page-17) .project {
+  .page-caption,
+  .ui-button-next,
+  .ui-button-prev,
+  .ui-pagination{
+    color: #fff;
+  }  
+}
