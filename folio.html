@@ -8,11 +8,11 @@
   <script>
     var count = 0;
   $( document ).ready(function() {
-      setTimeout(FOLIO.next,4000);
+      setTimeout(FOLIO.next,15000);
       count++;
   });
   $(window).bind('hashchange', function() {
-     setTimeout(FOLIO.next,2000);
+     setTimeout(FOLIO.next,15000);
     count++;
     if(count > 17){
       window.location.replace("./folio.html");
