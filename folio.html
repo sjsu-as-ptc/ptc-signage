@@ -7,20 +7,25 @@
   crossorigin="anonymous"></script>
   <script>
     var count = 0;
-    $( document ).ready(function() {
+  $( document ).ready(function() {
       setTimeout(FOLIO.next,4000);
       count++;
-    });
+  });
   $(window).bind('hashchange', function() {
      setTimeout(FOLIO.next,2000);
     count++;
     if(count > 17){
       window.location.replace("./folio.html");
     }
-});
+  });
   </script>
 </head>
 <body>
+  <style>
+    .ui-button-toggle {
+      display: none;
+    }
+  </style>
 <main>
   <!--[1] Article page: intro text-->
   <article layout="centered" class="-text-center" skin="dark">
