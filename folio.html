@@ -16,6 +16,7 @@
        return(false);
   }
     var count = 0;
+$( document ).ready(function() {
 if(getQueryVariable("auto") == 1){
       setTimeout(FOLIO.next,15000);
       count++;
@@ -27,6 +28,7 @@ if(getQueryVariable("auto") == 1){
     }
   });
 }
+});
   </script>
 </head>
 <body>
