@@ -20,10 +20,8 @@
   <script>
     var count = 0;
 if(getQueryVariable("auto") == 1){
-  $( document ).ready(function() {
       setTimeout(FOLIO.next,15000);
       count++;
-  });
   $(window).bind('hashchange', function() {
      setTimeout(FOLIO.next,15000);
     count++;
